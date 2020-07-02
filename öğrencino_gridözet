@@ -1,0 +1,28 @@
+Css Grid Nedir ?
+
+Css Grid Layout Modülü satırlar ve sütunlar içerir ve ızgara tabanlı yerleşim sistemi bulunur, web sayfasının nokta ve konumlandırma kullanmadan tasarlamayı kolaylaştırır.
+
+
+Grid Line: Izgaradaki yatay ve dikey çizgilerdir.
+
+Grid Container: Row,column,cell gibi yapıları içinde bulunduran ana kutu.
+
+Grid Row: Yatay kısımda bulunurlar.
+
+Grid Cell: 4 gridin arasında bulunur gridin en küçük birimidir.
+
+Grid Column: Dikey kısımdaki yapılardır.
+
+Grid Area: Birçok birimden oluşur.
+
+Grid Gap: Column ya da row arasındaki aralıktır.
+
+auto-fit : Tüm alanları kaplar. Media query kodu kullanmadan siteye responsivelik kazandırabilir.
+
+grid-gap: Satırlar ve sütunlar arasındaki boşuğu ayarlamak için kullanılır.
+
+grid-row-gap: Satırlar arasındaki boşluğu ayarlamak için kullanılır.
+
+grid-column-gap: Sütunlar arasındaki boşluğu ayarlamak için kullanılır.
+
+
