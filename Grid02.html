@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .item1 {grid-area: baslık;}/*grid tanımı*/
+  .item2 {grid-area: menu;}
+  .item3 {grid-area: sol;}
+  .item4 {grid-area: sag;}
+  .item5 {grid-area: alt;}
+  .deneme {grid-area: sol-alt;}
+  .dropdown {grid-area: buton;}
+  
+
+  .grid-container{
+  display: grid;
+  grid-template-areas: /* gridlerin yeri  */ 
+  'menu baslık baslık baslık baslık baslık'
+  'sol sol sol sag sag sag'
+  'sol-alt alt alt alt alt alt'
+  'buton buton buton buton buton buton' ;
+  grid-gap: 5px; /* iç grid aralığı genişliği  */
+  background-color: blueviolet; /* grid aralık rengi */
+  padding: 5px; /* dış grid aralığı genişliği  */
+  }
+
+ .grid-container > div {
+background-color:rgb(31, 190, 211); /* grid iç rengi */
+text-align: center;
+padding: 55px; /* grid içi genişliği */
+font-size: 40px; /* font boyutu*/
+ }
+ .dropbtn {
+  background-color: #4CAF50; /*button arkaplan rengi */
+  color: white; /* button text rengi */
+  padding: 55px; /* button boyutu */
+  font-size: 16px; /*button font boyu */
+  border: none;
+  cursor:progress;/*butonun üstüne gelince değişen mouse imleci */
+}
+
+.dropdown {
+  position:;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position:fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a/* linklerin içi */ {
+  color: red; /* linklerin rengi */
+  padding: 50px 50px; /* linklerin boyutu  */
+  text-decoration:none;
+  display:-ms-flexbox; /* linklerin sıralanış şekli */
+}
+/*Linklerin üzerine gelince değişen arkaplan rengi   */
+.dropdown-content a:hover {background-color:cyan} /* link arkaplan rengi */
+
+.dropdown:hover .dropdown-content {
+  display:contents;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:red;/*mousela üzerine gelince değişen button*/ 
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid02</title>
+</head>
+<body>
+<h1>Grid Örnek</h1>
+
+
+<div class="grid-container">
+<div class="item1">Başlık</div><!-- Gridlerin texti -->
+<div class="item2">Menü</div>
+<div class="item3">Sol</div>
+<div class="item4">Sağ</div>
+<div class="item5">Alt Taraf</div>
+<div class="item6">Sol Alt</div>
+<div class="dropdown">
+  <button class="dropbtn">Üzerine Gel</button>
+  <div class="dropdown-content">
+  <a href="#">Link1</a>
+  <a href="#">Link2</a>
+  <a href="#">Link3</a>
+  <a href="#">Link4</a>
+  <a href="#">Link5</a>
+  <a href="#">Link6</a>
+  </div> 
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!--201633261022-->
+</body>
+</html>
