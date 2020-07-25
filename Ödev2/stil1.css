@@ -1,0 +1,52 @@
+.item1 {grid-area: içerik;}/*grid tanımı*/
+  .dropdown {grid-area: buton;}
+  .icerik {grid-area: icerik;}
+
+  
+  .grid-container{
+  display: grid;
+  grid-template-areas: /* gridlerin yeri  */ 
+  'buton'
+  'icerik';
+  grid-gap: 5px; /* iç grid aralığı genişliği  */
+  background-color: white; /* grid aralık rengi */
+  padding: 5px; /* dış grid aralığı genişliği  */
+  }
+
+ .grid-container > div {
+background-color:rgb(31, 190, 211); /* grid iç rengi */
+text-align: center;
+padding: 55px; /* grid içi genişliği */
+font-size: 40px; /* font boyutu*/
+ }
+
+
+.dropdown-content a/* linklerin içi */ {
+  color: white; /* linklerin rengi */
+  padding: 50px 50px; /* linklerin boyutu  */
+  text-decoration:none;
+  display:-ms-flexbox; /* linklerin sıralanış şekli */
+}
+
+/*Linklerin üzerine gelince değişen arkaplan rengi   */
+.dropdown-content a:hover {background-color:cyan} /* link arkaplan rengi */
+@media only screen and (max-width: 500px){
+ .dropdown-content a{ /*500 px altında küçülen buttonlar  */
+  padding: 5px 5px;
+ }
+
+  }
+body{
+  background-image: url(Background.jpg); /*Background resmi*/ 
+}
+/*201632261022*/
+.icerik{/*Alt gridin uzunluğu*/ 
+
+  height: auto; /* otomatik uzunluk */
+
+}
+
+
+
+
+
